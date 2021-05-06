@@ -25,7 +25,11 @@
                     <?= $mhs['nama'];?>
                     <a href="<?=base_url();?>mahasiswa/hapus/<?=$mhs['id']?>"
                     class="badge bg-danger float-end"
-                    onclick="return confirm('yakin?');">Hapus</a>
+                    onclick="return confirm('yakin?');">hapus</a>
+                    <a href="<?=base_url();?>mahasiswa/ubah/<?=$mhs['id']?>"
+                    class="badge bg-success float-end">ubah</a>
+                    <a href="<?=base_url();?>mahasiswa/detail/<?=$mhs['id']?>"
+                    class="badge bg-primary float-end">detail</a>
                 </li>
             <?php endforeach; ?>
             </ul>
